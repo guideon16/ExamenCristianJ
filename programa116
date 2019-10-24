@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class c166 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+	
+		
+		
+	
+		int canal1= sc.nextInt();
+		int canal2= sc.nextInt();
+		int[] vec= new  int[99];
+		int contador=0;
+		int contador1=0;
+		int contador2=0;
+	
+		
+		for(int j = 1;j <= vec.length;j++) {
+			contador++;
+		}
+		
+		for(int c= canal1;c < canal2 ;c++) {
+				contador1++;
+		}
+		System.out.println(contador1);
+	
+
+	}
+}
