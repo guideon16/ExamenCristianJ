@@ -6,42 +6,39 @@ public class c166 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		
-	
+int max = 99;
 		
 		
-	
-		int canal1= sc.nextInt();
-		int canal2= sc.nextInt();
-		int[] vec= new  int[99];
-		int contador=0;
-		int contador1=0;
-		int contador2=0;
-		int contador3=0;
-		
-		for(int j = 1;j <= vec.length;j++) {
-			contador++;
+		while (true) {
+			
+			int canal1 = sc.nextInt();
+			int canal2 = sc.nextInt();
+			int primero;
+			int segundo;
+			
+			if (canal1 == 0 && canal2 == 0) {
+				break;
+			}
+			
+			if (canal1 > canal2) {
+				primero = Math.abs(canal1 - canal2);
+				segundo = Math.abs(max - canal1 + canal2);
+			}
+			else {
+				primero = Math.abs(canal1 - canal2);
+				segundo = Math.abs(max - canal2 + canal1);
+			}
+			if (primero < segundo) {
+				System.out.println(primero);
+			}
+			else {
+				System.out.println(segundo);
+			}
+			
 		}
-		
-		for(int c= canal1;c < canal2 ;c++) {
-				contador1++;
-		}
-		System.out.println(contador1);
+		//Modificado	
 		
 		
-		
-		for(int i = vec.length-1;i >= 0;i--)  {
-			contador3++;
-		}
-		
-		for(int c= canal2;c < canal1 ;c++) {
-				contador2++;
-		}
-		System.out.println(contador2);
-		
-
 	
-	
-	
-
-	}
+}
 }
